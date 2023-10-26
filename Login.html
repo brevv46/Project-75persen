@@ -1,0 +1,126 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Localride | Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins
+    :wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+><body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/logo.png" width="124px">
+            </div>
+            <nav>
+                <ul id="MenuItens">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="image/cart.png" width="30px" height="30px">
+            <img src="image/menu.png" class="menu-icon" onclick="menutoggle()"> 
+        </div>
+<!------------------------Login Page---------------------->
+<div class="login-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="image/background.png" width="100%">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm" action="file:///D:/web%20design/web%20design/Project/project.html" method="POST">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+                    
+                    <form id="RegForm" action="file:///D:/web%20design/web%20design/Project/project.html" method="POST">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------footer--------------------------------->
+
+</div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>SUPPORT US</h3>
+                    <p>"Produk lokal adalah cermin kekayaan budaya, kreativitas, dan dedikasi. Mendukung produk lokal <br>bukan 
+                        hanya investasi dalam kualitas,tetapi juga dalam masa depan komunitas kita sendiri."</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="image/logo.png">
+                    <p>Terkasih kepada Anda yang telah mengunjungi situs kami. Kami sangat menghargai kunjungan <br>Anda
+                         dan berharap Anda menemukan informasi yang berguna dan inspirasi di sini. </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Thanks For</h3>
+                    <ul>
+                        <li>Universitas Klabat</li>
+                        <li>Sir.Rolly Lontaan</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>@_brvy_m</li>
+                        <li>@rubeninkiriwang_</li>
+                        <li>jhoosuaaa</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Bullets">Need More Bullets</p>
+        </div>
+    </div>
+
+    <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+            function register(){
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+
+            }
+            function login(){
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+
+            }
+    </script>
+
+
+</body>
+</html>
